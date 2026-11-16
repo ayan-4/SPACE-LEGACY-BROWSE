@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SPACE LEGACY | Play & Learn</title><link rel="stylesheet" href="play.css">
+</head>
+<body><main id="game"><canvas id="scene"></canvas>
+<header><a href="../index.html">SPACE LEGACY <span>/ PLAY & LEARN</span></a><nav>
+<button id="worldMoon">MOON</button><button id="worldMars" class="active">MARS</button>
+<button id="cameraBtn">CAMERA: THIRD</button><button id="helpBtn">CONTROLS</button></nav></header>
+<section class="hud"><div><small>XP</small><b id="xp">000</b></div><div><small>SCIENCE DATA</small><b id="data">0</b></div><div><small>DISCOVERIES</small><b id="discoveries">0 / 6</b></div><div><small>WORLD</small><b id="worldName">MARS</b></div></section>
+<aside class="mission"><small>ACTIVE EXPEDITION</small><b id="missionTitle">MARS GEOLOGY EXPEDITION</b><p id="missionText">Collect 5 energy crystals and scan 2 objects.</p><div class="bar"><i id="missionProgress"></i></div></aside>
+<section id="scanPanel" class="panel hidden"><button class="close" id="closeScan">×</button><small>FIELD DISCOVERY</small><h2 id="scanTitle"></h2><p id="scanDescription"></p><p class="fact" id="scanFact"></p></section>
+<section id="helpPanel" class="panel hidden"><button class="close" id="closeHelp">×</button><h2>ROVER CONTROLS</h2><p><b>W / S</b> Drive / reverse · <b>A / D</b> steer</p><p><b>Mouse drag</b> Look · <b>C</b> Camera</p><p><b>E</b> Scan · <b>Space</b> Brake</p><p>Rover collision is enabled. Large rocks and exhibit structures block the rover. Small surface rocks can be driven over.</p></section>
+<div id="toast"></div><div id="scanHint">OBJECT IN RANGE — PRESS E TO SCAN</div><div class="crosshair">+</div>
+<div class="mobile"><div class="dpad"><button data-key="w">▲</button><div><button data-key="a">◀</button><button data-key="s">▼</button><button data-key="d">▶</button></div></div><button id="mobileScan">SCAN</button></div>
+<footer>EDUCATIONAL SIMULATION · ILLUSTRATIVE EXHIBIT LOCATIONS · INDEPENDENT STUDENT PROJECT</footer>
+</main><script type="module" src="play.js"></script></body></html>
